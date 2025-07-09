@@ -36,6 +36,7 @@ Next Level Expense Tracker App is a microservices-based backend designed to help
 ---------------------------------------------------------------------
 Architecture
 ------------
+<pre><code>
 +------------+         +--------------+            +-------+
 |  Client    | <-----> | AuthService  | <--------> | Kafka |
 +------------+         +--------------+            +-------+
@@ -45,6 +46,7 @@ Architecture
        |                +-----------+           +-------------+
        +--------------> | DsService | <-------> | UserService |
                         +-----------+           +-------------+
+</code></pre>
 
 - AuthService: Manages authentication, issues JWT tokens, and publishes user registration events to Kafka.
 - UserService: Consumes user registration events from Kafka and manages user data.
