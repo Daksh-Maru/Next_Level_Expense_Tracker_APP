@@ -103,6 +103,7 @@ Technologies Used
 ---------------------------------------------------------------------
 Future Roadmap
 --------------
+- Develop Expense Service to track realtime expenses of user
 - Develop and integrate a client-side application (web/mobile)
 - Add support for more SMS/payment formats and banks
 - Implement user dashboards and analytics
