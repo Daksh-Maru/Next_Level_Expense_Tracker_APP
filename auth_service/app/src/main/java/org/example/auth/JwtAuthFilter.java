@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.example.service.JwtService;
 import org.example.service.UserDetailsServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;

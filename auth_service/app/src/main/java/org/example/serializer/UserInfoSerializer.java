@@ -10,6 +10,7 @@ public class UserInfoSerializer implements Serializer<UserInfoEvent> {
 
     @Override
     public void configure(Map<String, ?> configs, boolean isKey) {
+        // Configuration can be done here if needed, currently no specific configuration is required.
     }
 
     @Override
@@ -21,6 +22,7 @@ public class UserInfoSerializer implements Serializer<UserInfoEvent> {
         try {
             returnValue = objectMapper.writeValueAsString(arg1).getBytes();
         }catch (Exception ex) {
+            System.out.println("Exception occurred while serializing UserInfoEvent: " + ex.getMessage());
             ex.printStackTrace();
         }
         return returnValue;
@@ -28,6 +30,6 @@ public class UserInfoSerializer implements Serializer<UserInfoEvent> {
 
     @Override
     public void close() {
-
+        // Cleanup can be done here if needed, currently no specific cleanup is required.
     }
 }

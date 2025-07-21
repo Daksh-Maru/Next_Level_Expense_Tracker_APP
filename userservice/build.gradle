@@ -9,15 +9,15 @@ repositories {
 	mavenCentral()
 }
 
-group = 'com.singhdevhub'
+group = 'com.consumer.service'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
+	sourceCompatibility = JavaVersion.VERSION_22
+	targetCompatibility = JavaVersion.VERSION_22
 
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(21)
+		languageVersion = JavaLanguageVersion.of(22)
 	}
 }
 application {
@@ -45,5 +45,4 @@ dependencies {
 	annotationProcessor group: 'org.projectlombok', name: 'lombok', version: "$lombokVersion"
 	testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: "$lombokVersion"
 	testImplementation group: 'org.projectlombok', name: 'lombok', version: "$lombokVersion"
-
 }

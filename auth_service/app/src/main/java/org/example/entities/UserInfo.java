@@ -28,9 +28,9 @@ public class UserInfo {
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable( // FORMING A NEW TABLE OF PRIMARY KEYS USER_ID -- ROLE_ID
-            name = "users_roles",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id")
+            name = "users_roles", // JOIN TABLE NAME
+            joinColumns = @JoinColumn(name = "user_id"), // FOREIGN KEY TO THIS TABLE
+            inverseJoinColumns = @JoinColumn(name = "role_id") // FOREIGN KEY TO ROLE TABLE
     )
     private Set<UserRole> roles = new HashSet<>();
 }
