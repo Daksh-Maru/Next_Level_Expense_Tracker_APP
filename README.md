@@ -22,7 +22,7 @@ A robust, production-ready backend system for tracking expenses, built with **Ja
 
 ## Project Overview
 
-**Next Level Expense Tracker App** is a microservices-based backend system that empowers users to automatically track and analyze their spending by parsing payment-related SMS messages. Built with a focus on modularity, scalability, and event-driven architecture, the system integrates easily with any web or mobile frontend.
+**Next Level Expense Tracker App** is a microservices-based backend system that empowers users to automatically track and analyse their spending by parsing payment-related SMS messages. Built with a focus on modularity, scalability, and event-driven architecture, the system integrates easily with any web or mobile frontend.
 
 ---
 
@@ -50,13 +50,13 @@ A robust, production-ready backend system for tracking expenses, built with **Ja
 
                               |
       (if authenticated)      v
-                         +-------------+
-                         | ExpenseService <-------------------+
-                         +-------------+                      |
-                              ^                               |
+                         +---------------+
+                         | ExpenseService| <-------------------+
+                         +---------------+                     |
+                              ^                                |
                               |                         (sends SMS expenses)
-                         +------------+                      |
-                         |  DsService  |---------------------+
+                         +------------+                        |
+                         |  DsService  |-----------------------+
                          +------------+
 
 
